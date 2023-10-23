@@ -1,0 +1,95 @@
+header {
+    size: 359px;
+    padding: 20px;
+    background-color: var(--colorAmarillo);
+}
+
+.holding h4 {
+    font-size: 14px;
+    margin-left: 15%;
+    position: relative;
+}
+
+.nav-bar img {
+    padding: 13px;
+}
+
+header nav article input {
+    width: 175px;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+}
+
+header nav ul li a {
+    margin-left: -60px;
+}
+.lupa{
+    border: 1px solid black;
+    width: 20px;
+    background-color: white;
+    position: relative;
+    top: 1px;
+}
+.lupa i{
+    position: relative;
+    left: 1px;
+    bottom: 0px;
+}
+
+/* LISTAS */
+
+.holding i{
+    position: relative;
+    margin-top: -20px;
+    right: -35px;
+    top: -36px;
+}
+
+.idcard {
+    position: relative;
+    margin-top: -20px;
+    right: -75px;
+    top: -52px;
+}
+
+.rightarrow {
+    position: relative;
+    margin-top: -16px;
+    right: -30px;
+    top: -36px;
+}
+
+.shopbasket {
+    position: relative;
+    margin-top: -19px;
+    right: -62px;
+    top: -18px;
+}
+.burger-menu{
+    color: var(--colorGrisClaro);
+    line-height: 10px;
+    border: 2px transparent var(--colorAzul);
+    border-radius: 10px;
+    padding: 20px 20px 12px;
+    margin: 10px;
+    width: 44px;
+    height: 44px;
+    position: relative;
+    right: -125px;
+    background-color: var(--colorCeleste);
+}
+.burger-menu i{
+    position: relative;
+    right: 5px;
+    top: -5px;
+    justify-content: space-between;
+    width: 10px;
+}
