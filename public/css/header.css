@@ -1,12 +1,11 @@
 header {
-    size: 359px;
     padding: 20px;
     background-color: var(--colorAmarillo);
 }
 
 .holding h4 {
     font-size: 14px;
-    margin-left: 15%;
+    margin-left: 45px;
     position: relative;
 }
 
@@ -20,6 +19,10 @@ header nav article input {
 
 header ul li {
     list-style: none;
+    margin-left: 40px;
+}
+header nav .offers{
+    margin-bottom: 20px;
 }
 
 header ul li a {
@@ -46,32 +49,31 @@ header nav ul li a {
 
 /* LISTAS */
 
-.holding i{
+header .holding i{
     position: relative;
-    margin-top: -20px;
-    right: -30px;
-    top: -36px;
+    right: -28px;
+    top: -18px;
 }
 
 .idcard {
     position: relative;
     margin-top: -20px;
     right: -75px;
-    top: -52px;
+    top: -35px;
 }
 
 .rightarrow {
     position: relative;
     margin-top: -16px;
     right: -30px;
-    top: -36px;
+    top: -20px;
 }
 
 .shopbasket {
     position: relative;
     margin-top: -19px;
     right: -62px;
-    top: -18px;
+    top: -2px;
 }
 .burger-menu{
     color: var(--colorGrisClaro);
@@ -86,10 +88,18 @@ header nav ul li a {
     right: -125px;
     background-color: var(--colorCeleste);
 }
-.burger-menu i{
+header .burger-menu{
+    display: flex;
+    justify-content: center;
     position: relative;
-    right: 5px;
-    top: -5px;
-    justify-content: space-between;
-    width: 10px;
+    right: -130px;
+    top: 0px;
+}
+header .burger-menu i{
+    font-size: 25px;
+    font-weight: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -3px;
 }
