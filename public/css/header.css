@@ -2,6 +2,12 @@ header {
     padding: 20px;
     background-color: var(--colorAmarillo);
 }
+header .banner img {
+    width: 425px;
+    position: relative;
+    left: -20px;
+    bottom: -24px;
+}
 
 .holding h4 {
     font-size: 14px;
@@ -9,12 +15,15 @@ header {
     position: relative;
 }
 
-.nav-bar img {
+header .nav-bar img {
     padding: 13px;
+    width: 180px;
 }
 
-header nav article input {
+header nav .topnav input {
     width: 175px;
+    height: 24px;
+    border: solid 1px black;
 }
 
 header ul li {
@@ -39,9 +48,11 @@ header nav ul li a {
     width: 20px;
     background-color: white;
     position: relative;
-    top: 1px;
+    top: -20px;
+    right: -182px;
 }
 .lupa i{
+    font-size: 17px;
     position: relative;
     left: 1px;
     bottom: 0px;
@@ -88,11 +99,14 @@ header .holding i{
     right: -125px;
     background-color: var(--colorCeleste);
 }
+header nav .listas {
+    display: none;
+}
 header .burger-menu{
     display: flex;
     justify-content: center;
     position: relative;
-    right: -130px;
+    right: -152px;
     top: 0px;
 }
 header .burger-menu i{
@@ -102,4 +116,54 @@ header .burger-menu i{
     align-items: center;
     position: relative;
     top: -3px;
+}
+/* tablet */
+
+@media (min-width:768px) {
+    header .banner img {
+        width: 768px;
+    }
+    header .burger-menu{
+        display: none;
+    }
+    header nav .listas{
+        display: contents;
+    }
+    header .holding h4{
+          text-align: center;
+    }
+    header .holding i{
+        position: relative;
+        right: -238px;
+        top: -18px;
+    }
+    header .nav-bar img {
+        padding: 13px;
+        width: 300px;
+    }
+}
+@media (min-width:1024px) {
+    header .banner img {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    header .burger-menu{
+        display: none;
+    }
+    header nav .listas{
+        display: contents;
+    }
+    header .holding h4{
+          text-align: center;
+    }
+    header .holding i{
+        position: relative;
+        right: -370px;
+        top: -18px;
+    }
+    header .nav-bar img {
+        padding: 13px;
+        width: 300px;
+    }
 }
