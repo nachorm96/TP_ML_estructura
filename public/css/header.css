@@ -142,7 +142,7 @@ header .burger-menu i{
         width: 300px;
     }
 }
-@media (min-width:1024px) {
+@media (min-width:1240px) {
     header .banner img {
         width: 100%;
         padding: 0;
@@ -159,7 +159,7 @@ header .burger-menu i{
     }
     header .holding i{
         position: relative;
-        right: -370px;
+        right: -570px;
         top: -18px;
     }
     header .nav-bar img {
