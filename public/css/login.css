@@ -1,0 +1,47 @@
+.home_main .formulario_login {
+    padding: 10px;
+    margin: 0;
+    background-color: var(--colorGrisClaro);
+}
+
+.home_main .formulario_login form input {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-bottom: 25px;
+    position: relative;
+    left: 86px;
+    width: 200px;
+    border: transparent;
+    border-radius: 8px;
+}
+
+.home_main .formulario_login form button {
+    position: relative;
+    left: 90px;
+    width: 190px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: var(--colorCeleste);
+    border: transparent;
+    border-radius: 8px;
+    color: #ebebeb;
+}
+
+@media (min-width:768px) {
+
+    .home_main .formulario_login form button,
+    .home_main .formulario_login form input {
+        left: 200px;
+        width: 370px;
+    }
+
+    @media (min-width:1440px) {
+
+        .home_main .formulario_login form button,
+        .home_main .formulario_login form input {
+            left: 400px;
+            width: 600px;
+        }
+    }
+}
