@@ -264,4 +264,18 @@
     .home_main .last_visit {
         padding: 0;
     }
+    .home_main .offer_section .product_container,
+    .home_main .last_visit .product_container {
+             padding-bottom: 10px;
+    }
+    .home_main .last_visit h3 {
+        position: relative;
+        left: 90px;
+        top: 50px;
+    }
+    .home_main .offer_section h3 {
+        position: relative;
+        left: 90px;
+        top: 40px;
+    }
 }
