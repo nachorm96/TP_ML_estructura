@@ -1,4 +1,7 @@
 footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
     padding: 10px;
 }
@@ -72,4 +75,11 @@ footer .copyright {
     margin-left: 40px;
     text-align: start;
     padding: 10px;
+}
+footer .creditcard,
+footer .gift,
+footer .usersafe {
+    position: relative;
+    width: 90%;
+    left: 25px;
 }

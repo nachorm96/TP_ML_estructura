@@ -2,6 +2,7 @@ header {
     padding: 20px;
     background-color: var(--colorAmarillo);
 }
+
 header .banner img {
     width: 425px;
     position: relative;
@@ -17,20 +18,27 @@ header .banner img {
 
 header .nav-bar img {
     padding: 13px;
-    width: 180px;
+    width: 190px;
+    position: relative;
+    right: 15px;
 }
 
 header nav .topnav input {
-    width: 175px;
-    height: 24px;
-    border: solid 1px black;
+    width: 180px;
+    height: 40px;
+    border: transparent 0.2px;
+    border-radius: 6%;
+    position: relative;
+    left: 175px;
+    bottom: 55px;
 }
 
 header ul li {
     list-style: none;
     margin-left: 40px;
 }
-header nav .offers{
+
+header nav .offers {
     margin-bottom: 20px;
 }
 
@@ -43,15 +51,18 @@ header ul li a {
 header nav ul li a {
     margin-left: -60px;
 }
-.lupa{
-    border: 1px solid black;
+
+.lupa {
+    border: 1px transparent;
     width: 20px;
     background-color: white;
     position: relative;
-    top: -20px;
-    right: -182px;
+    top: -85px;
+    right: -335px;
 }
-.lupa i{
+
+.lupa i {
+    color: var(--colorGrisOscuro);
     font-size: 17px;
     position: relative;
     left: 1px;
@@ -59,11 +70,16 @@ header nav ul li a {
 }
 
 /* LISTAS */
-
-header .holding i{
+header .holding h4 {
     position: relative;
-    right: -28px;
-    top: -18px;
+    right: -10px;
+    top: -30px;
+}
+
+header .holding i {
+    position: relative;
+    right: -35px;
+    top: -50px;
 }
 
 .idcard {
@@ -86,7 +102,8 @@ header .holding i{
     right: -62px;
     top: -2px;
 }
-.burger-menu{
+
+.burger-menu {
     color: var(--colorGrisClaro);
     line-height: 10px;
     border: 2px transparent var(--colorAzul);
@@ -96,20 +113,24 @@ header .holding i{
     width: 44px;
     height: 44px;
     position: relative;
-    right: -125px;
+    right: -85px;
     background-color: var(--colorCeleste);
 }
+
+header nav .lista2,
 header nav .listas {
     display: none;
 }
-header .burger-menu{
+
+header .burger-menu {
     display: flex;
     justify-content: center;
     position: relative;
     right: -152px;
     top: 0px;
 }
-header .burger-menu i{
+
+header .burger-menu i {
     font-size: 25px;
     font-weight: 10px;
     display: flex;
@@ -117,53 +138,141 @@ header .burger-menu i{
     position: relative;
     top: -3px;
 }
+
 /* tablet */
 
 @media (min-width:768px) {
     header .banner img {
         width: 768px;
     }
-    header .burger-menu{
+
+    header .burger-menu {
         display: none;
     }
-    header nav .listas{
-        display: contents;
+
+    header nav .lista2,
+    header nav .listas {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 30px;
     }
-    header .holding h4{
-          text-align: center;
-    }
-    header .holding i{
+
+    header nav .listas {
         position: relative;
-        right: -238px;
-        top: -18px;
+        left: 25px;
     }
+
+    header nav .listas li {
+        padding-left: 5px;
+
+    }
+
+    header nav .lista2 {
+        position: relative;
+        right: 25px;
+        top: -20px;
+        justify-content: end;
+    }
+
+    header nav .lista2 li {
+        padding-left: 20px;
+    }
+
+    header nav .lista2 .rightarrow {
+        position: relative;
+        right: 58px;
+        top: -3px;
+    }
+
+    header nav .lista2 .idcard {
+        position: relative;
+        right: 87px;
+        top: 1px;
+        padding-left: 10px;
+    }
+
+    header nav .lista2 .shopbasket {
+        position: relative;
+        right: -20px;
+    }
+
+    header .holding h4 {
+        position: relative;
+        left: 440px;
+        top: -95px;
+    }
+
+    header .holding i {
+        position: relative;
+        right: -468px;
+        top: -115px;
+    }
+
     header .nav-bar img {
         padding: 13px;
-        width: 300px;
+        width: 275px;
+    }
+
+    header nav .topnav input {
+        width: 180px;
+        height: 24px;
+        border: solid 1px var(--colorGrisOscuro);
+        position: relative;
+        left: 255px;
+        bottom: 55px;
+    }
+
+    .lupa {
+        border: 1px solid black;
+        width: 20px;
+        background-color: white;
+        position: relative;
+        top: -77px;
+        right: -438px;
+    }
+
+    .lupa i {
+        color: var(--colorNegro);
     }
 }
-@media (min-width:1240px) {
+
+@media (min-width:1440px) {
     header .banner img {
         width: 100%;
         padding: 0;
         margin: 0;
     }
-    header .burger-menu{
+
+    header .burger-menu {
         display: none;
     }
-    header nav .listas{
-        display: contents;
+
+    header nav .listas {
+        display: flex;
+        flex-wrap: nowrap;
     }
-    header .holding h4{
-          text-align: center;
+
+    header .holding h4 {
+        text-align: center;
     }
-    header .holding i{
+
+    header .holding i {
         position: relative;
-        right: -570px;
-        top: -18px;
+        left: 1005px;
+        top: -113px;
     }
+
     header .nav-bar img {
         padding: 13px;
-        width: 300px;
+        width: 400px;
+    }
+    header nav .topnav input {
+        position: relative;
+        left: 400px;
+        width: 200px;
+    }
+    header nav .topnav .lupa {
+        position: relative;
+        left: 605px;
     }
 }
