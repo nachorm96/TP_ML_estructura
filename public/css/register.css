@@ -1,0 +1,78 @@
+.home_main .formulario_register {
+    background-color: var(--colorCelestin);
+}
+
+.home_main .formulario_register form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.home_main .formulario_register form input {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    border: transparent;
+}
+
+.home_main .formulario_register form .datos input {
+    width: 90%;
+    position: relative;
+    left: 10px;
+    border: transparent;
+    border-radius: 8px;
+}
+
+.home_main .formulario_register form .datos select {
+    width: 90%;
+    position: relative;
+    left: 20px;
+    border: transparent;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.home_main .formulario_register form .btn_sr button {
+    width: 90%;
+    position: relative;
+    left: 20px;
+    border: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: var(--colorCeleste);
+    color: #ebebeb;
+}
+
+@media (min-width:768px) {
+    .home_main .formulario_register form .datos input {
+        left: 30px;
+    }
+
+    .home_main .formulario_register form .datos select {
+        left: 40px;
+    }
+
+    .home_main .formulario_register form .btn_sr button {
+        left: 40px;
+        padding: 5px;
+        margin: 5px;
+    }
+}
+
+@media (min-width:1440px) {
+    .home_main .formulario_register form .datos input {
+        left: 60px;
+    }
+
+    .home_main .formulario_register form .datos select {
+        left: 70px;
+    }
+
+    .home_main .formulario_register form .btn_sr button {
+        width: 500px;
+        padding: 10px;
+        left: 200px;
+    }
+}

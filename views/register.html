@@ -52,40 +52,40 @@
                 <i class="fas fa-bars"></i>
             </div>
         </nav>
-        <div class="banner">
+        <!-- <div class="banner">
             <img src="/images/img-home-banner.jpg" alt="banner home">
-        </div>
+        </div> -->
     </header>
 
     <main class="home_main">
         <section class="formulario_register">
             <form action="/register" method="POST">
-                <label for="nombre"></label>
-                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre y apellido" required>
+                <div class="datos">
+                    <label for="nombre"></label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido" required>
 
-                <label for="usuario"></label>
-                <input type="text" id="usuario" name="usuario" placeholder="Ingrese un nombre de usuario" required>
+                    <label for="usuario"></label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Nombre de usuario" required>
 
-                <label for="email"></label>
-                <input type="email" id="email" name="email" placeholder="Ingrese su dirección de correo electrónico"
-                    required>
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
 
-                <label for="fechaNacimiento"></label>
-                <input type="date" id="fechaNacimiento" name="fechaNacimiento"
-                    placeholder="Seleccione su fecha de nacimiento" required>
+                    <label for="fechaNacimiento"></label>
+                    <input type="date" id="fechaNacimiento" name="fechaNacimiento"
+                        placeholder="Seleccione su fecha de nacimiento" required>
 
-                <label for="domicilio"></label>
-                <textarea id="domicilio" name="domicilio" placeholder="Ingrese su dirección completa"
-                    required></textarea>
+                    <label for="domicilio"></label>
+                    <input type="text" id="domicilio" name="domicilio" placeholder="Domicilio" required>
 
-                <label for="perfil"></label>
-                <select id="perfil" name="perfil" placeholder="Seleccione su perfil" required>
-                    <option value="comprar">Comprar</option>
-                    <option value="vender">Vender</option>
-                </select>
+                    <label for="perfil"></label>
+                    <select id="perfil" name="perfil" placeholder="Seleccione su perfil" required>
+                        <option value="comprar">Comprar</option>
+                        <option value="vender">Vender</option>
+                    </select>
+                </div>
 
-                <label>Categorías de interés:</label>
-                <div>
+                <label>Intereses</label>
+                <div class="checkbox">
                     <input type="checkbox" id="electro" name="interes[]" value="Electro">
                     <label for="electro">Electro</label>
 
@@ -102,10 +102,11 @@
                     <label for="vidaSana">Vida Sana</label>
                 </div>
 
-
-                <label for="foto"></label>
-                <input type="file" id="foto" name="foto" accept="image/*" placeholder="Seleccione su foto de perfil">
-
+                <div class="seleccionar">
+                    <label for="foto"></label>
+                    <input type="file" id="foto" name="foto" accept="image/*"
+                        placeholder="Seleccione su foto de perfil">
+                </div>
 
                 <label for="password"></label>
                 <input type="password" id="password" name="password" placeholder="Ingrese su contraseña" required>
@@ -115,7 +116,7 @@
                 <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirme su contraseña"
                     required>
 
-                <div>
+                <div class="btn_sr">
                     <button type="submit">Enviar</button>
                     <button type="reset">Borrar Datos</button>
                 </div>
