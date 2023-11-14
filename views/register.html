@@ -12,7 +12,9 @@
 <body>
     <header>
         <div class="nav-bar">
-            <img src="/images/logo-mercado-liebre.svg" alt="mercado liebre logo">
+            <a href="/">
+                <img href="/home.html" src="/images/logo-mercado-liebre.svg" alt="mercado liebre logo">
+            </a>
         </div>
         <nav>
             <article class="topnav">
@@ -84,7 +86,7 @@
                     </select>
                 </div>
 
-                <label>Intereses</label>
+                <label class="interes">Intereses</label>
                 <div class="checkbox">
                     <input type="checkbox" id="electro" name="interes[]" value="Electro">
                     <label for="electro">Electro</label>
@@ -107,15 +109,15 @@
                     <input type="file" id="foto" name="foto" accept="image/*"
                         placeholder="Seleccione su foto de perfil">
                 </div>
+                <div class="password">
+                    <label for="password"></label>
+                    <input type="password" id="password" name="password" placeholder="Ingrese su contraseña" required>
 
-                <label for="password"></label>
-                <input type="password" id="password" name="password" placeholder="Ingrese su contraseña" required>
 
-
-                <label for="confirmPassword"></label>
-                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirme su contraseña"
-                    required>
-
+                    <label for="confirmPassword"></label>
+                    <input type="password" id="confirmPassword" name="confirmPassword"
+                        placeholder="Confirme su contraseña" required>
+                </div>
                 <div class="btn_sr">
                     <button type="submit">Enviar</button>
                     <button type="reset">Borrar Datos</button>

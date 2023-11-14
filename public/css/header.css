@@ -27,7 +27,7 @@ header nav .topnav input {
     width: 180px;
     height: 40px;
     border: transparent 0.2px;
-    border-radius: 6%;
+    border-radius: 6px;
     position: relative;
     left: 175px;
     bottom: 55px;
