@@ -1,9 +1,15 @@
 .home_main .formulario_login {
     padding: 10px;
+    height: 400px;
     margin: 0;
     background-color: var(--colorGrisClaro);
 }
-
+.home_main .form_login {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 .home_main .formulario_login form input {
     display: flex;
     flex-wrap: wrap;
