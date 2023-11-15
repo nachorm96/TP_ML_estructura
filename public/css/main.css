@@ -36,6 +36,7 @@
     margin-right: 10px;
     margin-bottom: 10px;
     transition: box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 .home_main .offer_section .productbox:hover,
