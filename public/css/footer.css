@@ -4,6 +4,7 @@ footer {
     justify-content: center;
     text-align: center;
     padding: 10px;
+    background-color: var(--colorCelestin);
 }
 
 footer p {
@@ -53,14 +54,17 @@ footer .gift i {
     position: relative;
     top: 8px;
 }
+
 footer .usersafe {
     padding: 20px;
     margin-left: -40px;
 }
+
 footer .usersafe h4 {
     padding: 10px;
     margin-bottom: 10px;
 }
+
 footer .usersafe i {
     color: var(--colorCeleste);
     font-size: 30px;
@@ -68,6 +72,7 @@ footer .usersafe i {
     position: relative;
     top: 8px;
 }
+
 footer .copyright {
     position: relative;
     top: 5px;
@@ -76,10 +81,46 @@ footer .copyright {
     text-align: start;
     padding: 10px;
 }
+
 footer .creditcard,
 footer .gift,
 footer .usersafe {
     position: relative;
-    width: 90%;
     left: 25px;
+}
+
+.creditcard i,
+.gift i,
+.usersafe i {
+    transition: color 1s ease;
+}
+
+.creditcard i:hover,
+.gift i:hover,
+.usersafe i:hover {
+    color: var(--colorVerde);
+}
+
+@media (min-width:768px) {
+
+    footer .creditcard,
+    footer .gift,
+    footer .usersafe {
+        position: relative;
+        left: 25px;
+    }
+}
+
+@media (min-width:1440px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .creditcard,
+    .gift,
+    .usersafe {
+        width: 30%;
+    }
 }

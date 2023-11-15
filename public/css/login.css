@@ -26,6 +26,12 @@
     border: transparent;
     border-radius: 8px;
     color: #ebebeb;
+    cursor: pointer;
+    transition: color 1.5s ease;
+}
+
+.home_main .formulario_login form button:hover {
+    color: #0022AA;
 }
 
 @media (min-width:768px) {
